@@ -1,11 +1,11 @@
 package ClassesAbstratas;
 
 public abstract class ContaBanco {
-    protected String titular;
+    protected String numeroConta;
     protected double saldo;
 
-    public ContaBanco(String titular, double saldo){
-        this.titular = titular;
+    public ContaBanco(String numeroConta, double saldo){
+        this.numeroConta = numeroConta;
         this.saldo = saldo;
     }
 

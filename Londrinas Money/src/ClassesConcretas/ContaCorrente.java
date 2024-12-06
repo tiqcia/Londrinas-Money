@@ -5,8 +5,8 @@ import ClassesAbstratas.ContaBanco;
 class ContaCorrente extends ContaBanco {
     private double limite;
 
-    public ContaCorrente(String titular, double saldo, double limite) {
-        super(titular, saldo);
+    public ContaCorrente(String numeroConta, double saldo, double limite) {
+        super(numeroConta, saldo);
         this.limite = limite;
     }
 
@@ -21,6 +21,6 @@ class ContaCorrente extends ContaBanco {
 
     @Override
     public void mostrarConta(){
-        System.out.println("Conta Corrente - Titular: " + titular + ", Saldo: " + saldo + ", Limite:" + limite);
+        System.out.println("Conta Corrente - Número da Conta: " + numeroConta + ", Saldo: " + saldo + ", Limite:" + limite);
     }
 }

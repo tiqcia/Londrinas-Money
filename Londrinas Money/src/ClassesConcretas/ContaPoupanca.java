@@ -5,8 +5,8 @@ import ClassesAbstratas.ContaBanco;
 public class ContaPoupanca extends ContaBanco {
     private static final double RENDIMENTO = 0.005;
 
-    public ContaPoupanca(String titular, double saldo){
-        super(titular, saldo);
+    public ContaPoupanca(String numeroConta, double saldo){
+        super(numeroConta, saldo);
     }
 
     public void juros(){
@@ -15,6 +15,6 @@ public class ContaPoupanca extends ContaBanco {
 
     @Override
     public void mostrarConta(){
-        System.out.println("Conta Poupança - Titular: " + titular + ", Saldo: " + saldo);
+        System.out.println("Conta Poupança - Número da Conta: " + numeroConta + ", Saldo: " + saldo);
     }
 }

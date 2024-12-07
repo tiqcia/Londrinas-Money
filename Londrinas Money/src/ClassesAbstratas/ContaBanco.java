@@ -1,29 +1,22 @@
 package ClassesAbstratas;
 
 public abstract class ContaBanco {
+    protected String titular;
     protected String numeroConta;
-    protected double saldo;
+    protected double SALDO = 2000.00;
+    protected double LIMITE = 500.00;
 
-    public ContaBanco(String numeroConta, double saldo){
+    public ContaBanco(String titular, String numeroConta) {
+        this.titular = titular;
         this.numeroConta = numeroConta;
-        this.saldo = saldo;
     }
 
-    public void depositar(double valor){
-        saldo += valor;
+    public void depositar(double valor) {
+        SALDO += valor;
+        System.out.printf("Depósito de R$%.2f realizado com sucesso. Novo saldo: R$%.2f%n", valor, SALDO);
     }
 
-    public void sacar(double valor){
-        if(saldo >= valor){
-            saldo -= valor;
-        }else{
-            System.out.println("Saldo insuficiente.");
-        }
-    }
-
-    public double getSaldo(){
-        return saldo;
-    }
+    public abstract boolean sacar(double valor);
 
     public abstract void mostrarConta();
 }

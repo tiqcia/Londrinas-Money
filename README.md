@@ -1,7 +1,6 @@
-# Londrinas-Money
+# Atividade de Classes abstratas
 
-Atividade de Classes abstratas
-
+Aluna: Leticia Farinacio
 Prof. Dr. Anderson Y. Iwazaki 
 
 # Objetivo da atividade: 
